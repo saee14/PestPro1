@@ -4,24 +4,35 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import com.example.pestpro.R
 import com.example.pestpro.api.RetrofitClient
 import com.google.gson.JsonObject
-import kotlinx.android.synthetic.main.activity_main.editTextEmail
-import kotlinx.android.synthetic.main.activity_main.editTextPassword1
+import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.MediaType
 import okhttp3.RequestBody
 import org.json.JSONObject
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val preferences = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+        val FirstTime = preferences.getString("FirstTimeInstal", "")
+
+        if (FirstTime == "Yes") {
+            val intent = Intent(this@MainActivity, LoginAct::class.java)
+            startActivity(intent)
+        } else {
+            val editor = preferences.edit()
+            editor.putString("FirstTimeInstal", "Yes")
+            editor.apply()
+        }
+
         textViewLogin.setOnClickListener {
             startActivity(Intent(this@MainActivity, LoginAct::class.java
             ))

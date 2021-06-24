@@ -25,6 +25,18 @@ class LoginAct : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        val preferences = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+        val FirstTime2 = preferences.getString("FirstTimeInstall", "")
+
+        if (FirstTime2 == "Yes") {
+            val intent = Intent(this@LoginAct, MainActivity_App::class.java)
+            startActivity(intent)
+        } else {
+            val editor = preferences.edit()
+            editor.putString("FirstTimeInstall", "Yes")
+            editor.apply()
+        }
+
         textViewRegister.setOnClickListener {
             startActivity(Intent(this@LoginAct, MainActivity::class.java))
         }
