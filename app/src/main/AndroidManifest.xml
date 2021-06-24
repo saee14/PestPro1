@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pestpro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/leaf2x"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/leaf2x"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.MainActivity"/>
+        <activity android:name=".activities.LogOut" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity
+            android:name=".activities.NewActivity2"
+            android:parentActivityName=".activities.MainActivity_App" />
+        <activity
+            android:name=".activities.NewActivity"
+            android:parentActivityName=".activities.MainActivity_App" />
+        <activity android:name=".activities.MainActivity_App" />
+        <activity
+            android:name=".activities.ExpAdapter"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".activities.Camera"
+            android:parentActivityName=".activities.MainActivity_App" />
+        <activity
+            android:name=".activities.AwaitingResults"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".activities.AboutUs" />
+        <activity android:name=".activities.LoginAct" />
+        <activity android:name=".activities.Settings" />
+        <activity android:name=".activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

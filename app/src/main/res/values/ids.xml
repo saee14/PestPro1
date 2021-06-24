@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="toolbar"/>
+    <item type="id" name="drawer_layout"/>
+    <item type="id" name="image1"/>
+    <item type="id" name="image2"/>
+    <item type="id" name="image3"/>
+    <item type="id" name="image4"/>
+    <item type="id" name="textview10"/>
+    <item type="id" name="textview11"/>
+    <item type="id" name="textview12"/>
+    <item type="id" name="RelativeLayoutNewActivity"/>
+</resources>

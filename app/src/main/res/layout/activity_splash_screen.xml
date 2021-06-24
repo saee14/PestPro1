@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".activities.SplashScreen">
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leaf3x"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash"
+        android:text="PestPro"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/malgun_regular"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:paddingLeft="15dp"
+    android:paddingHorizontal="15dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@color/green"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="150dp"
+    android:layout_width="200dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/malgun_bold"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/leaf"
+        android:layout_marginBottom="50dp"
+        android:text="PestPro"/>
+
+</LinearLayout>

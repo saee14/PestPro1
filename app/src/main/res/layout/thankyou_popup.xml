@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/popup_background"
+    android:layout_gravity="center"
+    android:layout_height="500dp"
+    android:layout_width="289dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="196dp"
+        android:layout_width="168dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        android:src="@drawable/submitted"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageView"/>
+
+    <Button
+        android:background="@color/white"
+        android:layout_height="35dp"
+        android:layout_width="70dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/go_back"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/green"
+        android:textAllCaps="false"
+        android:text="Go back"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:text=" Thank you!!\nYour query has been submitted"
+        android:layout_marginBottom="64dp"
+        android:layout_alignParentBottom="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        tools:ignore="ExtraText"
+        android:title="search"
+        app:actionViewClass="android.widget.SearchView">
+    </item>
+
+    <item
+        android:id="@+id/camera"
+        android:icon="@drawable/ic_camera"
+        app:showAsAction="always"
+        android:title="camera">
+    </item>
+
+<!--    <item-->
+<!--        android:id="@+id/sorting111"-->
+<!--        android:icon="@drawable/ic_baseline_sort_24"-->
+<!--        android:title="Sorting"-->
+<!--        app:showAsAction="always">-->
+
+<!--    </item>-->
+
+</menu>
