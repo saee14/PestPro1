@@ -22,17 +22,17 @@
             android:src="@drawable/image_1"
             android:scaleType="centerCrop"
             android:layout_marginBottom="18dp"
-            android:layout_marginRight="191dp"
+            android:layout_marginEnd="191dp"
             android:layout_marginTop="14dp"
-            android:layout_marginLeft="13dp"/>
+            android:layout_marginStart="13dp"/>
 
         <TextView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:id="@+id/pest_titlen"
-            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="164dp"
+            android:layout_marginStart="164dp"
             android:textColor="#3A3A3A"
             android:text="Severity"
             android:fontFamily="@font/malgun_bold"/>
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:id="@+id/pest_des"
             android:layout_marginTop="40dp"
-            android:layout_marginLeft="164dp"
+            android:layout_marginStart="164dp"
             android:textColor="#3A3A3A"
             android:text="Moderately Dangerous, may kill the plant if not treated."
             android:fontFamily="@font/malgun_regular"/>
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:id="@+id/pest_sol"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="164dp"
+            android:layout_marginStart="164dp"
             android:textColor="#3A3A3A"
             android:text="Solution by \nDr. Amit Shukla"
             android:fontFamily="@font/malgun_regular"
@@ -79,6 +79,7 @@
                 android:layout_marginBottom="11dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:textColor="@color/black"
                 android:text="A"
                 android:fontFamily="@font/malgun_bold"
@@ -184,7 +185,6 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:id="@+id/rating_bar"
-                android:layout_marginLeft="20dp"
                 android:layout_below="@id/textview12"
                 android:layout_marginStart="20dp"
                 android:stepSize="0.5"
@@ -209,7 +209,7 @@
                 android:background="@drawable/rounded_button"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
                 android:text="Submit"
                 android:layout_below="@id/edit_txt"
                 android:layout_centerInParent="true"/>
