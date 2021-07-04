@@ -6,8 +6,10 @@ import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.provider.MediaStore
+import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -16,6 +18,7 @@ import com.example.pestpro.api.RetrofitClient
 import com.google.gson.JsonObject
 import kotlinx.android.synthetic.main.activity_camera.*
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.thankyou_popup.view.*
 import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
@@ -31,16 +34,15 @@ class Camera : AppCompatActivity() {
         setContentView(R.layout.activity_camera)
 
         submit_btn.setOnClickListener {
-//            val view = LayoutInflater.from(this).inflate(R.layout.thankyou_popup, null)
-//            val builder = AlertDialog.Builder(this)
-//                    .setView(view)
-//            val popup = builder.show()
-//
-//            view.go_back.setOnClickListener {
-//                val intent = Intent(this, MainActivity_App::class.java)
-//                startActivity(intent)
-//            }
+            val view = LayoutInflater.from(this).inflate(R.layout.thankyou_popup, null)
+            val builder = AlertDialog.Builder(this)
+                    .setView(view)
+            val popup = builder.show()
 
+            view.go_back.setOnClickListener {
+                val intent = Intent(this, MainActivity_App::class.java)
+                startActivity(intent)
+            }
 
             val desc1 = edit_txt_cam.text.toString().trim()
             val user1 = edit_txt_username.text.toString().trim()
